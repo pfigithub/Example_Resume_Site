@@ -28,6 +28,7 @@ DATABASES = {
     }
 }
 
+COMPRESS_ENABLED = not DEBUG
 
 STATIC_ROOT = '/home/testpfic1/public_html/static'
 MEDIA_ROOT = '/home/testpfic1/public_html/media'

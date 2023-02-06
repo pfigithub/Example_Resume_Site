@@ -56,8 +56,10 @@
                         </div>
                         <div class="col-lg-3  col-md-3 meta-details">
                             <div class="user-details row">
-                                <p class="user-name col-lg-12 col-md-12 col-6"><a>{{post.author}}</a> <span class="lnr lnr-user"></span></p>
-                                <p class="date col-lg-12 col-md-12 col-6"><a>{{post.published_date|date:"D d M Y"}} </a></p>
+                                <p class="user-name col-lg-12 col-md-12 col-6"><a>{{post.author}}</a> <span
+                                        class="lnr lnr-user"></span></p>
+                                <p class="date col-lg-12 col-md-12 col-6"><a>{{post.published_date|date:"D d M Y"}} </a>
+                                </p>
                                 <p class="view col-lg-12 col-md-12 col-6"><a>{{post.counted_views}} Views</a>
                                     <span class="lnr lnr-eye"></span>
                                 </p>
@@ -87,7 +89,8 @@
                                 class="col-lg-6 col-md-6 col-12 nav-left flex-row d-flex justify-content-start align-items-center">
                                 <div class="thumb">
                                     <a href="{{post.get_previous_by_created_date.id}}"><img class="img-fluid"
-                                            src="{{post.get_previous_by_created_date.image.url}}" width="80px" alt=""></a>
+                                            src="{{post.get_previous_by_created_date.image.url}}" width="80px"
+                                            alt=""></a>
                                 </div>
                                 <div class="arrow">
                                     <a href="{{post.get_previous_by_created_date.id}}"><span
@@ -208,7 +211,7 @@
                     <div class="widget-wrap">
 
                         {% include 'blog/blog_writer.html' %}
-                        
+
                         {% latestposts %}
 
                         {% include 'blog/blog-tags.html' %}
@@ -220,24 +223,6 @@
     </section>
     <!--================Blog Area =================-->
 
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js' %}, then Bootstrap JS -->
-    <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
-    <script src="{% static 'js/popper.js' %}"></script>
-    <script src="{% static 'js/bootstrap.min.js' %}"></script>
-    <script src="{% static 'js/stellar.js' %}"></script>
-    <script src="{% static 'vendors/lightbox/simpleLightbox.min.js' %}"></script>
-    <script src="{% static 'vendors/nice-select/js/jquery.nice-select.min.js' %}"></script>
-    <script src="{% static 'vendors/isotope/imagesloaded.pkgd.min.js' %}"></script>
-    <script src="{% static 'vendors/isotope/isotope.pkgd.min.js' %}"></script>
-    <script src="{% static 'vendors/owl-carousel/owl.carousel.min.js' %}"></script>
-    <script src="{% static 'vendors/popup/jquery.magnific-popup.min.js' %}"></script>
-    <script src="{% static 'js/jquery.ajaxchimp.min.js' %}"></script>
-    <script src="{% static 'vendors/counter-up/jquery.waypoints.min.js' %}"></script>
-    <script src="{% static 'vendors/counter-up/jquery.counterup.min.js' %}"></script>
-    <script src="{% static 'js/mail-script.js' %}"></script>
-    <script src="{% static 'js/theme.js' %}"></script>
 </body>
 
 </html>
