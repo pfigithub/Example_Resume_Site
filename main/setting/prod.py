@@ -12,7 +12,7 @@ SECRET_KEY = get_random_secret_key()
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['testpfi.com', 'www.testpfi.com']
+ALLOWED_HOSTS = ['pfilife.com', 'www.pfilife.com']
 
 # sites framework
 
@@ -32,9 +32,6 @@ DATABASES = {
 STATIC_ROOT = '/home/testpfic1/public_html/static'
 MEDIA_ROOT = '/home/testpfic1/public_html/media'
 
-STATICFILES_DIRS = [
-    BASE_DIR / "statics",
-]
 
 ## X-XSS-Protection
 SECURE_BROWSER_XSS_FILTER = True
