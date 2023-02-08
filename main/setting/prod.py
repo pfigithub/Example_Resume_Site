@@ -12,7 +12,7 @@ SECRET_KEY = get_random_secret_key()
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['pfilife.com', 'www.pfilife.com']
+ALLOWED_HOSTS = ['pfilife.ir', 'www.pfilife.ir']
 
 # sites framework
 
